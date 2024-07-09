@@ -1,0 +1,5 @@
+langchain
+langchain-openai
+langchainhub
+beautifulsoup4
+faiss-cpu
