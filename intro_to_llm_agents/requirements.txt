@@ -1,5 +1,6 @@
 langchain
 langchain-openai
 langchainhub
+langchain_community
 beautifulsoup4
 faiss-cpu
