@@ -1,9 +1,0 @@
-{
-    "cot1" : "Step1 :\n\nI have a problem related to {input}. Could you brainstorm three distinct solutions? Please consider a variety of factors such as {perfect_factors}\nA:",
-
-    "cot2" : "Step 2:\n\nFor each of the three proposed solutions, evaluate their potential. Consider their pros and cons, initial effort needed, implementation difficulty, potential challenges, and the expected outcomes. Assign a probability of success and a confidence level to each option based on these factors\n\n{solutions}\n\nA:",
-
-    "cot3" : "Step 3:\n\nFor each solution, deepen the thought process. Generate potential scenarios, strategies for implementation, any necessary partnerships or resources, and how potential obstacles might be overcome. Also, consider any potential unexpected outcomes and how they might be handled.\n\n{review}\n\nA:",
-
-    "cot4" : "Step 4:\n\nBased on the evaluations and scenarios, rank the solutions in order of promise. Provide a justification for each ranking and offer any final thoughts or considerations for each solution\n\n{deepen_thought_process}\n\nA:"
-}

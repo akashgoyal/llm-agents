@@ -4,3 +4,4 @@ langchainhub
 langchain_community
 beautifulsoup4
 faiss-cpu
+sentence-transformers

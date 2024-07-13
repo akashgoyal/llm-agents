@@ -1,5 +1,7 @@
 # llm-agents
 
+### This repo primarily gives you an Introduction to building LLM Agents with Langchain.
+
 ## PART 1: Planning
 Chain of thought. Model is asked to think step by step, enabling self-correction.
 
