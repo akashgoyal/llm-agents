@@ -1,7 +1,7 @@
 from langchain.agents import initialize_agent, AgentType
 from langchain.memory import ConversationBufferMemory
-import llm_initials
-import llm_tools as agent_tools
+import llm_init as llm_initials
+import create_tools as agent_tools
 
 def init_agent_ddg_subtask():
     """Initialize an agent with DuckDuckGo search and subtask breakdown tools"""

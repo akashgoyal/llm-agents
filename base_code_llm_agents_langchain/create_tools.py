@@ -1,7 +1,7 @@
 from langchain.tools import Tool
 from langchain.prompts import PromptTemplate
 from typing import List
-import llm_initials
+import llm_init as llm_initials
 
 # Initialize LLM for analysis and subtask breakdown
 llm_openai = llm_initials.init_openai()
