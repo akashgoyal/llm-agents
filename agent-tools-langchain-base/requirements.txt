@@ -1,0 +1,8 @@
+langchain
+langchainhub
+langchain-openai
+langchain-anthropic
+langchain-google-genai
+langchain-community
+duckduckgo-search
+python-dotenv
