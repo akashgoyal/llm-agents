@@ -21,3 +21,15 @@ This makes it easy to understand the flow and extend codebase.
 
 ---
 
+
+## **4: text2pandas-query-pl**
+
+Talk to your Dataset. This project uses 'LlamaIndex Query Pipelines'.
+1. Initialize LLM. Read dataset file.
+2. Define Query Pipeline, which is actually a DAG flow. Take care of output links. Visualise the DAG.
+3. Talk to your llm app.
+
+`input text -> pandas commands -> eval -> result`
+
+---
+
