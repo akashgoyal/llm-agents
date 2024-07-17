@@ -1,14 +1,12 @@
 import os
 import requests
 import pandas as pd
-from llama_index.llms import Gemini #OpenAI
+import llms
 from pipeline import define_pipeline, visualise_pipeline
-from dotenv import load_dotenv
 
-# initialize llm
-load_dotenv('.env')
-api_key = os.getenv("GOOGLE_API_KEY")
-llm = Gemini(api_key=api_key, model_name= "models/gemini-1.5-flash")
+# llm = llms.gemini_init()
+# llm = llms.llama3_8b_init()
+llm = llms.llama3_70b_init()
 print("LLM initialized")
 
 # Load the dataset from a URL - start
@@ -20,7 +18,7 @@ def download_file(url, filename):
     except Exception as e:
         return f"Failed to download file: {e}"
     return 200
-data_url = "https://raw.githubusercontent.com/akashgoyal/datasets-ref/master/titanic.csv"
+data_url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
 status = download_file(data_url, 'titanic.csv')
 if status == 200:
     print("File downloaded successfully")

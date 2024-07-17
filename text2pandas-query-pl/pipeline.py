@@ -1,10 +1,10 @@
-from llama_index.prompts import PromptTemplate
-from llama_index.query_pipeline import (
+from llama_index.core import PromptTemplate
+from llama_index.core.query_pipeline import (
     QueryPipeline as QP,
     Link,
     InputComponent,
 )
-from llama_index.query_engine.pandas import PandasInstructionParser
+from llama_index.experimental.query_engine.pandas import PandasInstructionParser
 
 from modules import instruction_str, pandas_prompt_str, response_synthesis_prompt_str
 
