@@ -1,5 +1,6 @@
 langchain
 langchain-openai
+langchain-google-genai
 langchainhub
 langchain_community
 beautifulsoup4

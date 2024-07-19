@@ -49,4 +49,4 @@ def visualise_pipeline(qp):
     from pyvis.network import Network
     net = Network(notebook=True, cdn_resources="in_line", directed=True)
     net.from_nx(qp.dag)
-    net.show("text2sql_dag.html")
+    net.show("text2pandas_dag.html")

@@ -2,6 +2,10 @@ llama-index
 llama-index-experimental
 llama-index-llms-groq
 llama-index-llms-gemini
+llama-index-llms-together
+llama-index-vector-stores-milvus
+pymilvus
+pymilvus[model]
 # llama-index-embeddings-huggingface
 # llama-parse
 arize-phoenix
