@@ -1,10 +1,3 @@
-instruction_str = (
-    "1. Convert the query to executable Python code using Pandas.\n"
-    "2. The final line of code should be a Python expression that can be called with the `eval()` function.\n"
-    "3. The code should represent a solution to the query.\n"
-    "4. PRINT ONLY THE EXPRESSION.\n"
-    "5. Do not quote the expression.\n"
-)
 
 get_tablename_summary_str = (
     "Give me a summary of the table in the following JSON format.\n"
@@ -13,4 +6,12 @@ get_tablename_summary_str = (
     "Do NOT make the table name one of the following: {exclude_table_name_list}\n"
     "Table:\n{table_str}\n"
     "Summary: "
+)
+
+response_synthesis_prompt_str = (
+    "Given an input question, synthesize a response from the query results.\n"
+    "Query: {query_str}\n"
+    "SQL: {sql_query}\n"
+    "SQL Response: {context_str}\n"
+    "Response: "
 )
