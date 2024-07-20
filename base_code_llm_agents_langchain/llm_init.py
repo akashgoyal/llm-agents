@@ -10,7 +10,7 @@ from langchain_community.tools import DuckDuckGoSearchRun
 
 import os
 from dotenv import load_dotenv
-load_dotenv('llm_init.env')
+load_dotenv('../.env')
 
 ####### LLMs ########
 def init_openai():

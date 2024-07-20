@@ -5,7 +5,7 @@ from llama_index.llms.groq import Groq
 from llama_index.llms.together import TogetherLLM
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 
-load_dotenv('.env')
+load_dotenv('../.env')
 google_api_key = os.getenv("GOOGLE_API_KEY")
 groq_api_key = os.getenv("GROQ_API_KEY")
 together_api_key = os.getenv("TOGETHER_API_KEY")

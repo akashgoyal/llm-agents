@@ -2,7 +2,7 @@ from llama_index.llms.together import TogetherLLM
 from llama_index.core.llms import ChatMessage
 import os
 from dotenv import load_dotenv
-load_dotenv('.env')
+load_dotenv('../.env')
 
 class TogetherAiClass:
     def __init__(self, model_name="mistralai/Mixtral-8x7B-Instruct-v0.1"):

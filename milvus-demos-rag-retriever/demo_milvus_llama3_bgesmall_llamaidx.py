@@ -6,7 +6,7 @@ from llama_index.vector_stores.milvus import MilvusVectorStore
 import os
 import urllib.request
 from dotenv import load_dotenv
-load_dotenv('.env')
+load_dotenv('../.env')
 
 ##
 together_api_key = os.getenv("TOGETHER_API_KEY")

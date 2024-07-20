@@ -20,6 +20,6 @@ import planning as plan
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
 from dotenv import load_dotenv
-load_dotenv('llm_init.env')
+load_dotenv('../.env')
 api_key = os.getenv("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(google_api_key=api_key, model="gemini-1.5-flash", temperature=0.7)

@@ -11,7 +11,7 @@ from llama_index.core.tools import RetrieverTool, ToolMetadata
 from llama_index.llms.together import TogetherLLM
 
 from dotenv import load_dotenv
-load_dotenv('.env')
+load_dotenv('../.env')
 
 # set models
 llm = TogetherLLM(model="meta-llama/Llama-3-8b-chat-hf", api_key=os.getenv("TOGETHER_API_KEY"))

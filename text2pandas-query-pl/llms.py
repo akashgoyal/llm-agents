@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from llama_index.llms.gemini import Gemini
 from llama_index.llms.groq import Groq
 
-load_dotenv('.env')
+load_dotenv('../.env')
 google_api_key = os.getenv("GOOGLE_API_KEY")
 groq_api_key = os.getenv("GROQ_API_KEY")
 
