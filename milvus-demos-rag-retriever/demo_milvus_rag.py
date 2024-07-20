@@ -54,14 +54,14 @@ docs = SimpleDirectoryReader(input_files=["wework.pdf"]).load_data()
 service_context_jina = ServiceContext.from_defaults(llm=llm, embed_model=jina_embedding_model, chunk_size=512, chunk_overlap=100)
 vector_index_jina = VectorStoreIndex.from_documents(docs, storage_context=storage_context_jina, service_context=service_context_jina)
 
-# optional tool
-# milvus_tool_openai = RetrieverTool(
-#     retriever=vector_index_jina.as_retriever(similarity_top_k=3),  # retrieve top_k results
-#     metadata=ToolMetadata(
-#         name="CustomRetriever",
-#         description='Retrieve relevant information from provided documents.'
-#     ),
-# )
+# tool
+milvus_tool_openai = RetrieverTool(
+    retriever=vector_index_jina.as_retriever(similarity_top_k=3),  # retrieve top_k results
+    metadata=ToolMetadata(
+        name="CustomRetriever",
+        description='Retrieve relevant information from provided documents.'
+    ),
+)
 
 # query_engine = vector_index_jina.as_query_engine()
 # response = query_engine.query("What are the Risk Factors for WeWork that could happen?")
